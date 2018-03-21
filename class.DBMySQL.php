@@ -15,7 +15,7 @@ class DBMySQL
      * @param string $g_db_password
      * @param string $g_database_name
      */
-    function __construct(string $g_hostname, string $g_db_username, string $g_db_password, string $g_database_name)
+    function __construct($g_hostname, $g_db_username, $g_db_password, $g_database_name)
     {
         $this->servername = $g_hostname;
         $this->username = $g_db_username;

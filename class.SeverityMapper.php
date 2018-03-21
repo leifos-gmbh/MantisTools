@@ -12,7 +12,7 @@ class SeverityMapper
      *
      * @param string $g_db_table_prefix
      */
-    public function setTablePrefix(string $g_db_table_prefix)
+    public function setTablePrefix($g_db_table_prefix)
     {
         $this->prefix = trim($g_db_table_prefix, " _");
         if ($this->prefix != "")
@@ -27,7 +27,7 @@ class SeverityMapper
      *
      * @param string $g_db_table_suffix
      */
-    public function setTableSuffix(string $g_db_table_suffix)
+    public function setTableSuffix($g_db_table_suffix)
     {
         $this->suffix = trim($g_db_table_suffix, " _");
         if ($this->suffix != "")
