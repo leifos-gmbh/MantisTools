@@ -5,7 +5,7 @@ include_once("./class.SeverityMapper.php");
 
 $mapper = new SeverityMapper();
 
-if (!empty($g_db_table_prefix))
+if (isset($g_db_table_prefix))
 {
     $mapper->setTablePrefix($g_db_table_prefix);
 }
@@ -14,7 +14,7 @@ else
     echo "No prefix found in config_inc.php. Use predefined value instead.\n";
 }
 
-if (!empty($g_db_table_suffix))
+if (isset($g_db_table_suffix))
 {
     $mapper->setTableSuffix($g_db_table_suffix);
 }
