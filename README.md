@@ -1,7 +1,5 @@
 # MantisTools
 
-Minimum Mantis version: 2.10.0
-
 #### Current features
 - Removes some options (trivial, text, tweak, crash, block)  of the "severity"-setting for more clarity and adds two new options, which combine the missing options
 
